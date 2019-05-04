@@ -1,4 +1,4 @@
-// Global Variables =============================================
+// GLOBAL VARIABLES =============================================== //
 var goalNumber = 0,
     totalScore = 0,
     wins = 0,
@@ -8,7 +8,7 @@ var goalNumber = 0,
     crystal3 = 0,
     crystal4 = 0;
 
-// Functions ====================================================
+// FUNCTIONS ====================================================== //
 
 function readyStart() {
     var random = Math.floor(Math.random() * 103) + 19;
@@ -34,7 +34,7 @@ function readyStart() {
 
 }
 
-// =============== ROCK VALUES =================================== //
+// ROCK CLICKS =================================================== //
 
 $('#rock-1').on("click", function() {
     totalScore = totalScore + crystal1;
@@ -80,7 +80,7 @@ $('#rock-4').on("click", function() {
     // alert("Rock 4 is clicked");
 })
 
-// ======= END GAME RESULT FUNCTIONS ================================ //
+// END GAME RESULT FUNCTIONS ==================================== //
 
 function winner () {
     wins++;
