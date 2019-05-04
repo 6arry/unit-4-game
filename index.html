@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="us-en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Crystal Collector Game
+        </title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+<body>
+    <div class="header">
+        <h1>Crystals Collector!</h1>
+    </div>
+
+    <div class="instructions">
+        <p>You will be given a random number at the start of the game.
+        <br><br>
+        There are four crystals below. By clicking on a crystal you will add a specific of points to your total scoer.
+        <br><br>
+        You win the game by matching your total score to random number, you lose the game if your total goes above the random number
+        <br><br>
+        The value of each crystal is hidden from you until you click on it
+        <br><br>
+        Each time when the game starts, the game will change the values of each crystal</p>
+    </div>
+
+    <div>
+        The number you are trying to obtain:
+        <h2 id="goal">99</h2>
+    </div>
+
+    <div class="statBoard">
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+    </div>
+
+    <div class="crystals">
+        <button id="rock-1" class="btn btn-primary">1</button>
+        <button id="rock-2" class="btn btn-success">2</button>
+        <button id="rock-3" class="btn btn-danger">3</button>
+        <button id="rock-4" class="btn btn-info">4</button>
+    </div>
+
+    <div class="scoreBanner">
+        <p>Your total score is: <span id="playerScore"></span></p>
+    </div>
+    
+    <div>
+    <span id="totalScore">0</span>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
