@@ -3,54 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <title>
-            Crystal Collector Game
+            Game of Stones
         </title>
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
 <body>
-    <div class="header">
-        <h1>Crystals Collector!</h1>
+    <div class="header col-12">
+        <div class="nameBoard">
+            <h1>Game of Stones</h1>
+        </div>
+        
+        <div class="goalBoard">
+            Goal:
+            <h1 id="goal">0</h1>
+        </div>
     </div>
 
-    <div class="instructions">
-        <p>You will be given a random number at the start of the game.
-        <br><br>
-        There are four crystals below. By clicking on a crystal you will add a specific of points to your total scoer.
-        <br><br>
-        You win the game by matching your total score to random number, you lose the game if your total goes above the random number
-        <br><br>
-        The value of each crystal is hidden from you until you click on it
-        <br><br>
-        Each time when the game starts, the game will change the values of each crystal</p>
-    </div>
+    <div class="container col-12">
+        <div class="instructions">
+            <div class="title">
+                <h3>Instrunctions</h3>
+            </div>
+                <ol>
+                    <li>You will be given a random goal number at the start of the game.</li>
+                    <li>There are four colored stones to the right. (Blue, Green, Red, Turqoise)</li>
+                    <li>By clicking on a stone you will add a specific amount of points to your total score.</li>
+                    <li>You win the game by matching your total score to the goal number.</li>
+                    <li>You lose the game if your total goes above the goal number.</li>
+                    <li>The value of each stone is hidden from you until you click on it.</li>
+                    <li>Each time when the game starts, the game will change the values of each stone.</li>
+                </ol>
+        </div>
 
-    <div>
-        The number you are trying to obtain:
-        <h2 id="goal">99</h2>
-    </div>
+        <div class="sideBoard">
+            <div class="statBoard">
+                Wins: <span id="wins">0</span>
+                Losses: <span id="losses">0</span>
+            </div>
 
-    <div class="statBoard">
-        <p>Wins: <span id="wins">0</span></p>
-        <p>Losses: <span id="losses">0</span></p>
-    </div>
+            <div class="crystals">
+                <button id="rock-1" class="btn btn-primary" aria-pressed="true">1</button>
+                <button id="rock-2" class="btn btn-success" aria-pressed="true">2</button>
+                <button id="rock-3" class="btn btn-danger" aria-pressed="true">3</button>
+                <button id="rock-4" class="btn btn-info" aria-pressed="true">4</button>
+            </div>
 
-    <div class="crystals">
-        <button id="rock-1" class="btn btn-primary">1</button>
-        <button id="rock-2" class="btn btn-success">2</button>
-        <button id="rock-3" class="btn btn-danger">3</button>
-        <button id="rock-4" class="btn btn-info">4</button>
+            <div class="scoreBoard">
+                Your score: 
+                <h1><span id="playerScore">0</span></h1>
+            </div>
+        </div>
     </div>
-
-    <div class="scoreBanner">
-        <p>Your total score is: <span id="playerScore"></span></p>
-    </div>
-    
-    <div>
-    <span id="totalScore">0</span>
-    </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>

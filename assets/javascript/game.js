@@ -31,6 +31,8 @@ function readyStart() {
     var rock4 = Math.floor(Math.random() * 12) + 1;
         crystal4 = crystal4 + rock4;   
     console.log("My fourth crystal has a value of " + crystal4);
+
+    $('#playerScore').html(totalScore);
 }
 
 // ROCK CLICKS =================================================== //
@@ -102,7 +104,6 @@ function reset(){
         crystal2 = 0,
         crystal3 = 0,
         crystal4 = 0;
-        $('#playerScore').html(totalScore);
         readyStart();
 }
 
