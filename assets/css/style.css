@@ -13,7 +13,7 @@ body {
 .header {
     background-color: #3475ee;
     background: url(../images/cement.jpg);
-    color: #ffffff;
+    color: #000000;
     border: ridge 2px #cecece;
     margin: 10px 0 10px 20px;
 }
@@ -27,6 +27,7 @@ body {
 .goalBoard {
     text-align: right;
     font-family: 'MedievalSharp', cursive;
+    color: #800000;
 }
 
 /* CONTAINER  ================================================= */
@@ -74,10 +75,22 @@ body {
     font-family: 'MedievalSharp', cursive;
 }
 
+#wins {
+    color: green;
+}
+
+#losses {
+    color: red;
+}
+
 /* STONES ===================================================== */
 
 /* SCOREBOARD DIV ============================================= */
 
 .scoreBoard {
     font-family: 'MedievalSharp', cursive;
+}
+
+#playerScore {
+    color: yellow;
 }
